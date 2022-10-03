@@ -2,13 +2,16 @@ $h2-gray: #a6a6a6;
 $dark-gray: #808285;
 
 .footer{
+    position: relative;
     &::after{
         content: "";
         display: block;
+        position: absolute;
         width: 100%;
         height: 100%;
-        opacity: 0.1;   
-        background: url(../body-space.jpg);
+        top: 0;
+        opacity: 00.1;   
+        background-image: url(../images/body-space.jpg);
     }
 }
 
@@ -37,7 +40,7 @@ $dark-gray: #808285;
 .banner{
     z-index: -1;
     position: relative;
-    background: url(../space\ img.jpg);
+    background: url(../images/space\ img.jpg);
     &-square{
         position: absolute;
         top: 0px;
@@ -72,18 +75,19 @@ $dark-gray: #808285;
 .myPhoto{
     position: relative;
     object-fit: cover;
-}
+}\  
 .myPhoto-square{
     z-index: 1;
     &::after{
         content: "";
         display: block;
         position: absolute;
-        width: 100%;
-        height: 100%;
+        width: 160px;
+        height: 240px;
         z-index: -1;
         bottom: -16px;
-        left: 16px;
+        // left: 16px;
+        right: -32px;
         background: #dda978;
     }
 }
@@ -93,6 +97,7 @@ $dark-gray: #808285;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     position: relative;
+    left: 16px;
     &::after{
         display: block;
         content: "";
@@ -105,5 +110,24 @@ $dark-gray: #808285;
         height: 100%;
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
+    }
+}
+
+.img-cropper{
+    position: relative;
+    left: 16px;
+    width: 160px;
+    height: 240px;
+    z-index: 1;
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background: #dda978;
     }
 }
