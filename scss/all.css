@@ -1,0 +1,106 @@
+.footer::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background: url(../body-space.jpg);
+}
+
+.text-darkGray {
+  color: #808285;
+}
+
+.object-fit-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.circle {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.font-black {
+  color: black;
+}
+
+.bg-lightGray {
+  background: #a6a6a6;
+}
+
+.banner {
+  z-index: -1;
+  position: relative;
+  background: url(../space\ img.jpg);
+}
+.banner-square {
+  position: absolute;
+  top: 0px;
+  left: -270px;
+  width: 350px;
+  height: 350px;
+  background: #808285;
+  transform: rotate(80deg);
+}
+.banner-square::after {
+  content: "";
+  display: block;
+  background: white;
+  position: relative;
+  top: 40px;
+  width: 100%;
+  height: 2px;
+  transform: rotate(130deg);
+}
+.banner-square::before {
+  content: "";
+  display: block;
+  background: white;
+  position: relative;
+  left: 100px;
+  width: 100%;
+  height: 2px;
+  transform: rotate(80deg);
+}
+
+.myPhoto {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.myPhoto-square {
+  z-index: 1;
+}
+.myPhoto-square::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  bottom: -16px;
+  left: 16px;
+  background: #dda978;
+}
+
+.intro {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: relative;
+}
+.intro::after {
+  display: block;
+  content: "";
+  top: 16px;
+  left: 16px;
+  position: absolute;
+  z-index: -1;
+  background: #808285;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}/*# sourceMappingURL=all.css.map */
