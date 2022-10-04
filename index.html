@@ -12,7 +12,44 @@
     <link rel="stylesheet" href="css/all.css">
 </head>
 <body>
-    <div class="banner py-5">
+    <nav class="navbar navbar-expand-lg navbar-light bg-lightGray">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <div class="banner pd-set">
         <div class="banner-square"></div>
         <div class="container">
             <div class="card border-0 bg-transparent">
@@ -33,12 +70,13 @@
         </div>
     </div>
     
+
     <div class="space-bg">
         <div class="feature pt-1">
             <div class="container d-flex justify-content-center">
                 <div class="col-9 d-flex justify-content-between">
                     <div class="card col-4  feature__card rounded-0 border-0 ">
-                        <div class="d-flex w-100">
+                        <div class="d-flex w-100 h-100">
                             <div class="d-flex py-3 feature__card__title px-3">
                                 <p class="card-title vertical-lr text-white mx-2 fs-5 fw-bold">大學社團經驗<span class="mt-3 fs-6">擔任拳擊社社長</span></p>
                                 <p class="vertical-lr mx-0 text-white pe-1">大三擔任拳擊社團長時，與資工、資訊系的同學</p>
@@ -62,7 +100,7 @@
                         <p class="text-white mb-0">故在iT邦上發表了連續17天前端學習歷程。</p>
                         <p class="text-white mb-0">以下為幾篇精華，也謝謝學長姐的加油支持！</p>
                         <a href="#">
-                            <img src="./images/鐵人邦.png" alt="" class="card-img-bottom mt-3" height="250px">
+                            <img src="./images/鐵人邦.png" alt="" class="card-img-bottom mt-3 ratio ratio-4x3">
                         </a>
                         <div class="feature__ithome__block ps-3 py-3 d-flex flex-column">
                             <a href="#" class="text-white">
@@ -77,6 +115,18 @@
             </div>
         </div>
     
+        <div class="work  pd-set">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-9">
+                        <div class="card bg-transparent" style="height: 200px;">
+                            <h2 class="card-title">我的其他作品</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="study py-5">
             <div class="container">
                 <div class="row justify-content-center">
