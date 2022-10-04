@@ -1,4 +1,59 @@
+.fs-lg {
+  font-size: 18px;
+}
+
+.fs-7 {
+  font-size: 14px;
+}
+
+.bg-darkGray {
+  background: #808285;
+}
+
+.vertical-lr {
+  writing-mode: vertical-lr;
+}
+
+.horizontal-tb {
+  writing-mode: horizontal-tb;
+}
+
+.feature__card {
+  background: rgba(0, 0, 0, 0.2);
+}
+.feature__card__title {
+  border-right: 2px solid white;
+}
+
+.space-bg {
+  position: relative;
+}
+.space-bg::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 0.1;
+  background: url(../images/space\ img.jpg);
+}
+
+.feature__ithome {
+  position: relative;
+}
+.feature__ithome__block {
+  position: absolute;
+  margin-top: -16px;
+  right: -67px;
+  width: 65px;
+  height: 100%;
+  background: #808285;
+}
+
 .footer {
+  background: rgba(0, 0, 0, 0.1);
   position: relative;
 }
 .footer::after {
@@ -17,14 +72,22 @@
 }
 
 .object-fit-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .circle {
   width: 250px;
   height: 250px;
   overflow: hidden;
+}
+.circle__small {
+  z-index: 1;
+  overflow: hidden;
+  position: absolute;
+  bottom: 8px;
+  right: -68px;
+  width: 150px;
+  height: 150px;
 }
 
 .font-black {
@@ -72,8 +135,7 @@
 
 .myPhoto {
   position: relative;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 \  .myPhoto-square {
@@ -128,4 +190,48 @@
   width: 100%;
   height: 100%;
   background: #dda978;
+}
+
+.study__line {
+  position: relative;
+}
+
+.line__block {
+  position: absolute;
+  top: 34px;
+  left: -20px;
+}
+
+.study {
+  position: relative;
+}
+.study__line::after {
+  content: "";
+  display: block;
+  width: calc(100% + 50px);
+  height: 2px;
+  position: absolute;
+  top: 56px;
+  left: -30px;
+  border-bottom: 2px dashed #a6a6a6;
+}
+.study__text {
+  color: #808285;
+}
+.study__text:nth-child(3) {
+  position: relative;
+  right: -64px;
+  color: #808285;
+}
+.study__text:nth-child(4) {
+  position: relative;
+  right: -128px;
+  color: #808285;
+}
+
+.study__problem {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  right: -80px;
 }/*# sourceMappingURL=all.css.map */
