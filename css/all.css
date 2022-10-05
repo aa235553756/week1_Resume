@@ -1,3 +1,22 @@
+.rocket-image {
+  position: absolute;
+  bottom: 0;
+  right: -8vw;
+  width: 480px;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.5;
+  transform: rotate(10deg) translateY(50px);
+}
+
+.space-bg {
+  overflow: hidden;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
 .start-25 {
   left: 25%;
 }
@@ -24,11 +43,13 @@
 }
 
 .vertical-lr {
-  writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
 }
 
 .horizontal-tb {
-  writing-mode: horizontal-tb;
+  -ms-writing-mode: lr-tb;
+      writing-mode: horizontal-tb;
 }
 
 .feature__card {
@@ -89,7 +110,8 @@
 }
 
 .object-fit-cover {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .circle {
@@ -152,7 +174,8 @@
 
 .myPhoto {
   position: relative;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 \  .myPhoto-square {
@@ -265,4 +288,12 @@
 
 .timeline__text {
   top: 32px;
+}
+
+.mars__image {
+  position: absolute;
+  filter: grayscale(100%) opacity(0.5);
+  bottom: -100px;
+  left: -100px;
+  z-index: -1;
 }/*# sourceMappingURL=all.css.map */
