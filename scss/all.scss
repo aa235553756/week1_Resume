@@ -3,6 +3,13 @@ $dark-gray: #808285;
 
 // 字體
 
+.start-25{
+    left: 25%;
+}
+.start-75{
+    left: 75%;
+}
+
 .pd-set{
     padding-top: 80px;
     padding-bottom: 80px;
@@ -34,6 +41,10 @@ $dark-gray: #808285;
     }
 }
 
+.shrink-0{
+    flex-shrink: 0;
+}
+
 .space-bg{
     position: relative;
     &::after{
@@ -61,7 +72,7 @@ $dark-gray: #808285;
     }
 }
 
-.footer{
+.quot{
     background: rgba(0,0,0,0.1);
     position: relative;
     &::after{
@@ -85,15 +96,15 @@ $dark-gray: #808285;
 }
 
 .circle{
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     overflow: hidden;
     &__small{
         z-index: 1;
         overflow: hidden;
         position: absolute;
-        bottom: 8px;
-        right: -68px;
+        bottom: -128px;
+        right: 8px;
         width: 150px;
         height: 150px;
     }
@@ -205,11 +216,21 @@ $dark-gray: #808285;
 .study__line{
     position: relative;
 }
-.line__block{
+.timeline__circle{
     position: absolute;
-    top: 34px;
-    left: -20px;
+    left: -40px;
+    top: 44px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid gray;
 }
+.timeline__arrow{
+    position: absolute;
+    top: 37px;
+    left: calc(100% + 5px);
+}
+
 
 .study{
     position: relative;
@@ -220,7 +241,7 @@ $dark-gray: #808285;
             width: calc(100% + 50px);
             height: 2px;
             position: absolute;
-            top: 56px;
+            top: 48px;
             left: -30px;
             // background:red;
             border-bottom: 2px dashed $h2-gray;
@@ -248,4 +269,8 @@ $dark-gray: #808285;
     background: rgba(0,0,0,0.2);
     top: 0;
     right: -80px;
+}
+
+.timeline__text{
+    top: 32px;
 }

@@ -1,3 +1,11 @@
+.start-25 {
+  left: 25%;
+}
+
+.start-75 {
+  left: 75%;
+}
+
 .pd-set {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -16,13 +24,11 @@
 }
 
 .vertical-lr {
-  -ms-writing-mode: tb-lr;
-      writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
 }
 
 .horizontal-tb {
-  -ms-writing-mode: lr-tb;
-      writing-mode: horizontal-tb;
+  writing-mode: horizontal-tb;
 }
 
 .feature__card {
@@ -30,6 +36,10 @@
 }
 .feature__card__title {
   border-right: 2px solid white;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
 }
 
 .space-bg {
@@ -59,11 +69,11 @@
   background: #808285;
 }
 
-.footer {
+.quot {
   background: rgba(0, 0, 0, 0.1);
   position: relative;
 }
-.footer::after {
+.quot::after {
   content: "";
   display: block;
   position: absolute;
@@ -79,21 +89,20 @@
 }
 
 .object-fit-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .circle {
-  width: 250px;
-  height: 250px;
+  width: 225px;
+  height: 225px;
   overflow: hidden;
 }
 .circle__small {
   z-index: 1;
   overflow: hidden;
   position: absolute;
-  bottom: 8px;
-  right: -68px;
+  bottom: -128px;
+  right: 8px;
   width: 150px;
   height: 150px;
 }
@@ -143,8 +152,7 @@
 
 .myPhoto {
   position: relative;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 \  .myPhoto-square {
@@ -205,10 +213,20 @@
   position: relative;
 }
 
-.line__block {
+.timeline__circle {
   position: absolute;
-  top: 34px;
-  left: -20px;
+  left: -40px;
+  top: 44px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+
+.timeline__arrow {
+  position: absolute;
+  top: 37px;
+  left: calc(100% + 5px);
 }
 
 .study {
@@ -220,7 +238,7 @@
   width: calc(100% + 50px);
   height: 2px;
   position: absolute;
-  top: 56px;
+  top: 48px;
   left: -30px;
   border-bottom: 2px dashed #a6a6a6;
 }
@@ -243,4 +261,8 @@
   background: rgba(0, 0, 0, 0.2);
   top: 0;
   right: -80px;
+}
+
+.timeline__text {
+  top: 32px;
 }/*# sourceMappingURL=all.css.map */
