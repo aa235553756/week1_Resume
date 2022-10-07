@@ -1,0 +1,68 @@
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.hover-white{
+    &:hover{
+        color: white !important;
+    }
+}
+
+.hover-black{
+    &:hover{
+        color: black !important;
+    }
+}
+
+.text-gray{
+    color: $h2-gray !important;
+}
+
+.start-25{
+    left: 25%;
+}
+.start-75{
+    left: 75%;
+}
+
+.pd-set{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.fs-lg{
+    font-size: 18px;
+}
+
+.fs-7{
+    font-size: 14px;
+}
+
+.bg-darkGray{
+    background: $dark-gray;
+}
+
+.vertical-lr{
+    writing-mode: vertical-lr;
+}
+
+.horizontal-tb{
+    writing-mode: horizontal-tb;
+}
+
+.text-darkGray{
+    color:$dark-gray;
+}
+
+.object-fit-cover{
+    object-fit: cover;
+}
+
+.font-black{
+    color: black;
+}
+
+.bg-lightGray{
+    background: #a6a6a6;
+}

@@ -1,9 +1,67 @@
-$h2-gray: #a6a6a6;
-$dark-gray: #808285;
+@import 'variable';
+@import 'utilties';
 
 // 字體
 
-@media (max-width:1400px) {
+
+
+.banner{
+    z-index: -1;
+    position: relative;
+    background: url(../images/space\ img.jpg);
+    &-square{
+        position: absolute;
+        top: 0px;
+        left: -270px;
+        opacity: 0.3;
+        width: 350px;
+        height: 350px;
+        background: $dark-gray;
+        transform: rotate(80deg);
+        &::after{
+            content: "";
+            display: block;
+            background: white;
+            position: relative;
+            top: 40px;
+            width: 100%;
+            height: 2px;
+            transform: rotate(130deg);
+        }
+        &::before{
+            content: "";
+            display: block;
+            background: white;
+            position: relative; 
+            left: 100px;
+            width: 100%;
+            height: 2px;
+            transform: rotate(80deg);
+        }
+    }
+}
+
+.intro{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+    left: 16px;
+    &::after{
+        display: block;
+        content: "";
+        top: 16px;
+        left: 16px;
+        position: absolute;
+        z-index: -1;
+        background: #808285;
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+}
+
+@media (min-width:1400px) {
     .intro__title{
         width: 85%;
     }
@@ -24,44 +82,9 @@ $dark-gray: #808285;
     overflow: hidden;
 }
 
-body{
-    font-family: 'Noto Sans TC', sans-serif;
-}
-
-.start-25{
-    left: 25%;
-}
-.start-75{
-    left: 75%;
-}
-
 .address{
     height: 80%;
     border-bottom: 2px solid white;
-}
-
-.pd-set{
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-.fs-lg{
-    font-size: 18px;
-}
-
-.fs-7{
-    font-size: 14px;
-}
-
-.bg-darkGray{
-    background: $dark-gray;
-}
-
-.vertical-lr{
-    writing-mode: vertical-lr;
-}
-.horizontal-tb{
-    writing-mode: horizontal-tb;
 }
 
 .feature__card{
@@ -105,25 +128,8 @@ body{
 .quot{
     background: rgba(0,0,0,0.1);
     position: relative;
-    // &::after{
-    //     content: "";
-    //     display: block;
-    //     position: absolute;
-    //     width: 100%;
-    //     height: 100%;
-    //     top: 0;
-    //     opacity: 00.1;   
-    //     background-image: url(../images/body-space.jpg);
-    // }
 }
 
-.text-darkGray{
-    color:$dark-gray;
-}
-
-.object-fit-cover{
-    object-fit: cover;
-}
 
 .circle{
     position: relative;
@@ -147,54 +153,11 @@ body{
     left: -10px;
 }
 
-.font-black{
-    color: black;
-}
-
-.bg-lightGray{
-    background: #a6a6a6;
-}
-
-.banner{
-    z-index: -1;
-    position: relative;
-    background: url(../images/space\ img.jpg);
-    &-square{
-        position: absolute;
-        top: 0px;
-        left: -270px;
-        opacity: 0.3;
-        width: 350px;
-        height: 350px;
-        background: $dark-gray;
-        transform: rotate(80deg);
-        &::after{
-            content: "";
-            display: block;
-            background: white;
-            position: relative;
-            top: 40px;
-            width: 100%;
-            height: 2px;
-            transform: rotate(130deg);
-        }
-        &::before{
-            content: "";
-            display: block;
-            background: white;
-            position: relative; 
-            left: 100px;
-            width: 100%;
-            height: 2px;
-            transform: rotate(80deg);
-        }
-    }
-}
-
 .myPhoto{
     position: relative;
     object-fit: cover;
-}\  
+}
+
 .myPhoto-square{
     z-index: 1;
     &::after{
@@ -211,26 +174,6 @@ body{
     }
 }
 
-
-.intro{
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    position: relative;
-    left: 16px;
-    &::after{
-        display: block;
-        content: "";
-        top: 16px;
-        left: 16px;
-        position: absolute;
-        z-index: -1;
-        background: #808285;
-        width: 100%;
-        height: 100%;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-    }
-}
 
 .img-cropper{
     position: relative;
@@ -254,6 +197,7 @@ body{
 .study__line{
     position: relative;
 }
+
 .timeline__circle{
     position: absolute;
     left: -40px;
@@ -263,12 +207,12 @@ body{
     border-radius: 50%;
     border: 1px solid gray;
 }
+
 .timeline__arrow{
     position: absolute;
     top: 37px;
     left: calc(100% + 5px);
 }
-
 
 .study{
     position: relative;

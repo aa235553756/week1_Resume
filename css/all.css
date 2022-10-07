@@ -1,25 +1,17 @@
-@media (max-width: 1400px) {
-  .intro__title {
-    width: 85%;
-  }
-}
-.rocket-image {
-  position: absolute;
-  bottom: 0;
-  right: -8vw;
-  width: 480px;
-  height: 450px;
-  z-index: -1;
-  opacity: 0.7;
-  transform: rotate(10deg) translateY(50px);
-}
-
-.space-bg {
-  overflow: hidden;
-}
-
 body {
   font-family: "Noto Sans TC", sans-serif;
+}
+
+.hover-white:hover {
+  color: white !important;
+}
+
+.hover-black:hover {
+  color: black !important;
+}
+
+.text-gray {
+  color: #a6a6a6 !important;
 }
 
 .start-25 {
@@ -28,11 +20,6 @@ body {
 
 .start-75 {
   left: 75%;
-}
-
-.address {
-  height: 80%;
-  border-bottom: 2px solid white;
 }
 
 .pd-set {
@@ -53,54 +40,13 @@ body {
 }
 
 .vertical-lr {
-  writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
 }
 
 .horizontal-tb {
-  writing-mode: horizontal-tb;
-}
-
-.feature__card {
-  background: rgba(0, 0, 0, 0.2);
-}
-.feature__card__title {
-  border-right: 2px solid white;
-}
-
-.shrink-0 {
-  flex-shrink: 0;
-}
-
-.space-bg {
-  position: relative;
-}
-.space-bg::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  opacity: 0.1;
-  background: url(../images/space\ img.jpg);
-}
-
-.feature__ithome {
-  position: relative;
-}
-.feature__ithome__block {
-  position: absolute;
-  margin-top: -16px;
-  right: -67px;
-  width: 65px;
-  height: 100%;
-  background: #808285;
-}
-
-.quot {
-  background: rgba(0, 0, 0, 0.1);
-  position: relative;
+  -ms-writing-mode: lr-tb;
+      writing-mode: horizontal-tb;
 }
 
 .text-darkGray {
@@ -108,29 +54,8 @@ body {
 }
 
 .object-fit-cover {
-  object-fit: cover;
-}
-
-.circle {
-  position: relative;
-  width: 225px;
-  height: 225px;
-  overflow: hidden;
-}
-.circle__small {
-  z-index: 1;
-  overflow: hidden;
-  position: absolute;
-  bottom: -128px;
-  right: 8px;
-  width: 150px;
-  height: 150px;
-}
-
-.global__cropper {
-  position: absolute;
-  top: -5px;
-  left: -10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .font-black {
@@ -177,26 +102,6 @@ body {
   transform: rotate(80deg);
 }
 
-.myPhoto {
-  position: relative;
-  object-fit: cover;
-}
-
-\  .myPhoto-square {
-  z-index: 1;
-}
-\  .myPhoto-square::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 160px;
-  height: 240px;
-  z-index: -1;
-  bottom: -16px;
-  right: -32px;
-  background: #dda978;
-}
-
 .intro {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -215,6 +120,117 @@ body {
   height: 100%;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
+}
+
+@media (min-width: 1400px) {
+  .intro__title {
+    width: 85%;
+  }
+}
+.rocket-image {
+  position: absolute;
+  bottom: 0;
+  right: -8vw;
+  width: 480px;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.7;
+  transform: rotate(10deg) translateY(50px);
+}
+
+.space-bg {
+  overflow: hidden;
+}
+
+.address {
+  height: 80%;
+  border-bottom: 2px solid white;
+}
+
+.feature__card {
+  background: rgba(0, 0, 0, 0.2);
+}
+.feature__card__title {
+  border-right: 2px solid white;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.space-bg {
+  position: relative;
+}
+.space-bg::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 0.1;
+  background: url(../images/space\ img.jpg);
+}
+
+.feature__ithome {
+  position: relative;
+}
+.feature__ithome__block {
+  position: absolute;
+  margin-top: -16px;
+  right: -67px;
+  width: 65px;
+  height: 100%;
+  background: #808285;
+}
+
+.quot {
+  background: rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.circle {
+  position: relative;
+  width: 225px;
+  height: 225px;
+  overflow: hidden;
+}
+.circle__small {
+  z-index: 1;
+  overflow: hidden;
+  position: absolute;
+  bottom: -128px;
+  right: 8px;
+  width: 150px;
+  height: 150px;
+}
+
+.global__cropper {
+  position: absolute;
+  top: -5px;
+  left: -10px;
+}
+
+.myPhoto {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.myPhoto-square {
+  z-index: 1;
+}
+.myPhoto-square::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 160px;
+  height: 240px;
+  z-index: -1;
+  bottom: -16px;
+  right: -32px;
+  background: #dda978;
 }
 
 .img-cropper {
